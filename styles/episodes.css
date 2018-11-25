@@ -841,14 +841,8 @@ section
     transition: all 200ms ease;
 }
 .show_fav_icon.active .svg path,
-.show_fav_icon.active .svg rect,
-.show_fav_icon.active .svg polygon,
 .show_fav_icon:hover .svg path,
-.show_fav_icon:hover .svg rect,
-.show_fav_icon:hover .svg polygon,
-.show_comments:hover .svg path,
-.show_comments:hover .svg rect,
-.show_comments:hover .svg polygon
+.show_comments:hover .svg path
 {
 	fill: #ff3500;
 }
