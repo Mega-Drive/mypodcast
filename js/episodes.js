@@ -9,7 +9,7 @@
 3. Init Menu
 4. Init Favs
 5. Init SVG
-5. Init Gallery
+6. Init Gallery
 
 
 ******************************/
@@ -165,7 +165,7 @@ $(document).ready(function()
 
 	/* 
 
-	5. Init Gallery
+	6. Init Gallery
 
 	*/
 
