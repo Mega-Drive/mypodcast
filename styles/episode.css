@@ -114,8 +114,8 @@ p a:hover::after
 }
 ::selection
 {
-	background: rgba(255,255,255,1);
-	color: #ff3500;
+	background: #ff3500;
+	color: #FFFFFF;
 }
 p::selection
 {
@@ -941,7 +941,7 @@ section
 {
 	width: 100%;
 	z-index: 1;
-	margin-top: -235px;
+	margin-top: 53px;
 }
 .sidebar_title
 {
@@ -950,84 +950,24 @@ section
 	color: #2e3038;
 	line-height: 1.2;
 }
+.episode_image_container
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 .episode_image
 {
 	width: 100%;
 	max-width: 300px;
 	border-radius: 3px;
 	overflow: hidden;
-}
-.sidebar_search
-{
-	margin-top: 40px;
-}
-.search_form
-{
-	display: block;
-	position: relative;
-	width: 100%;
-	margin-top: 22px;
-}
-.search_input
-{
-	width: 100%;
-	height: 32px;
-	padding-left: 18px;
-	background: #f7f7f7;
-	border: none;
-	outline: none;
-	border-radius: 16px;
-}
-.search_input::-webkit-input-placeholder
-{
-	font-size: 13px !important;
-	font-weight: 300 !important;
-	font-style: italic;
-	color: #2e3038 !important;
-}
-.search_input:-moz-placeholder
-{
-	font-size: 13px !important;
-	font-weight: 300 !important;
-	font-style: italic;
-	color: #2e3038 !important;
-}
-.search_input::-moz-placeholder
-{
-	font-size: 13px !important;
-	font-weight: 300 !important;
-	font-style: italic;
-	color: #2e3038 !important;
-} 
-.search_input:-ms-input-placeholder
-{ 
-	font-size: 13px !important;
-	font-weight: 300 !important;
-	font-style: italic;
-	color: #2e3038 !important;
-}
-.search_input::input-placeholder
-{
-	font-size: 13px !important;
-	font-weight: 300 !important;
-	font-style: italic;
-	color: #2e3038 !important;
-}
-.search_button
-{
-	position: absolute;
-	top: 0;
-	right: 5px;
-	width: 32px;
-	height: 32px;
-	background: transparent;
-	border: none;
-	outline: none;
-	cursor: pointer;
+	margin-top: -146px;
 }
 .sidebar_list
 {
-	margin-top: 36px;
+	
 }
 .sidebar_list ul
 {

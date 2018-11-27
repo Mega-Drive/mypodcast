@@ -74,6 +74,10 @@
 	{
 		display: block;
 	}
+	.sidebar
+	{
+		margin-top: 8px;
+	}
 }
 
 /************
@@ -108,11 +112,27 @@
 	{
 		display: block;
 	}
+	.episode_image_container
+	{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+	}
+	.episode_image
+	{
+		width: 100%;
+		margin-top: 0px;
+	}
 	.sidebar
 	{
 		margin-top: 0;
 	}
 	.episode_col
+	{
+		margin-top: 53px;
+	}
+	.sidebar_col
 	{
 		margin-top: 100px;
 	}
@@ -174,7 +194,7 @@
 	}
 	.episode_image
 	{
-		width: 93px;
+		width: 150px;
 	}
 	.episode_content
 	{
