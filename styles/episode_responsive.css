@@ -108,7 +108,11 @@
 	{
 		display: block;
 	}
-	.episodes_col
+	.sidebar
+	{
+		margin-top: 0;
+	}
+	.episode_col
 	{
 		margin-top: 100px;
 	}
@@ -151,14 +155,6 @@
 
 @media only screen and (max-width: 767px)
 {
-	.home_title h1
-	{
-		font-size: 48px;
-	}
-	.show_info
-	{
-		display: none !important;
-	}
 	.episode_name a
 	{
 		font-size: 16px;
@@ -184,6 +180,10 @@
 	{
 		padding-left: 25px;
 		padding-right: 25px;
+	}
+	.comment_form > div:first-child > div:first-child
+	{
+		margin-bottom: 30px;
 	}
 }
 
@@ -230,14 +230,13 @@
 	{
 		display: block;
 	}
+	.home
+	{
+		height: 442px;
+	}
 	.home_container
 	{
-		top: 55%;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		transform: translateY(-50%);
+		padding-top: 114px;
 	}
 	.home_title
 	{
@@ -245,7 +244,7 @@
 	}
 	.home_title h1
 	{
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.button_fill,
 	.button_border
@@ -269,6 +268,11 @@
 	.sidebar_list ul li a
 	{
 		font-size: 14px;
+	}
+	.comment_button
+	{
+		width: 121px;
+		font-size: 12px;
 	}
 }
 

@@ -868,6 +868,7 @@ section
 	font-weight: 500;
 	color: #2e3038;
 	margin-left: 7px;
+	margin-bottom: 2px;
 }
 .show_comments:hover .show_comments_count
 {

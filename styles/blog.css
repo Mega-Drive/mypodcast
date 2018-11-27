@@ -11,7 +11,7 @@
 4. Menu
 5. Home
 6. Sidebar
-7. Episodes
+7. Blog
 8. Footer
 
 
@@ -59,10 +59,10 @@ ul
 p
 {
 	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
-	line-height: 1.666666666666667;
+	font-size: 14px;
+	line-height: 1.875;
 	font-weight: 300;
-	color: #2e3038;
+	color: rgba(0,0,0,0.5);
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -346,6 +346,46 @@ section
 .section_title.light h1
 {
 	color: #FFFFFF;
+}
+.tags
+{
+	position: absolute;
+	top: 13px;
+	left: 11px;
+}
+.tags ul li
+{
+    display: inline-block;
+    height: 20px;
+    background: #ff3500;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.tags ul li:not(:last-of-type)
+{
+    margin-right: 10px;
+}
+.tags ul li:hover
+{
+	background: #2e3038;
+}
+.tags ul li a
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 12.73px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding-left: 6px;
+    padding-right: 7px;
 }
 
 /*********************************
@@ -872,6 +912,108 @@ section
 	visibility: visible;
 	opacity: 1;
 }
+
+/*********************************
+7. Blog
+*********************************/
+
+.blog
+{
+	background: #FFFFFF;
+	padding-top: 109px;
+	padding-bottom: 106px;
+}
+.blog_post:not(:last-child)
+{
+	margin-bottom: 77px;
+}
+.blog_post_image
+{
+	width: 42.5%;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+.blog_post_content
+{
+	width: 57.5%;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	padding-left: 30px;
+}
+.blog_post_date
+{
+	position: absolute;
+	left: -6px;
+	top: -9px;
+	width: 161px;
+	height: 42px;
+	border-radius: 21px;
+	background: #ff3500;
+}
+.blog_post_date a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 42px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+.blog_post_title
+{
+	margin-top: -4px;
+}
+.blog_post_title a
+{
+	font-size: 24px;
+	font-weight: 500;
+	color: #2e3038;
+	line-height: 1.2;
+}
+.blog_post_author
+{
+	margin-top: 5px;
+}
+.blog_post_author,
+.blog_post_author a
+{
+	font-size: 14px;
+	font-weight: 300;
+	color: #2e3038;
+}
+.blog_post_title a:hover,
+.blog_post_author a:hover
+{
+	color: #ff3500;
+}
+.blog_post_text
+{
+	margin-top: 38px;
+}
+.blog_post_link
+{
+	margin-top: 33px;
+}
+.blog_post_link a
+{
+	position: relative;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ff3500;
+}
+.blog_post_link a::after
+{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #ff3500;
+	content: '';
+}
 .page_nav_row
 {
 	margin-top: 100px;
@@ -923,310 +1065,6 @@ section
 	-ms-transform: translateX(2px);
 	-o-transform: translateX(2px);
 	transform: translateX(2px);
-}
-
-/*********************************
-7. Episodes
-*********************************/
-
-.episodes
-{
-	background: #FFFFFF;
-	padding-top: 79px;
-	padding-bottom: 99px;
-}
-.season_links ul li:not(:last-of-type)
-{
-	margin-right: 25px;
-}
-.season_links ul li
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #494949;
-	cursor: pointer;
-}
-.season_links ul li:hover
-{
-	color: #ff3500;
-}
-.episodes_row
-{
-	margin-top: 79px;
-}
-.episodes_container
-{
-	overflow: hidden;
-}
-.episode
-{
-	width: 100%;
-	border-radius: 3px;
-	overflow: hidden;
-	background: #f7f7f7;
-}
-.episode:not(:last-child)
-{
-	margin-bottom: 30px;
-}
-.episode_image
-{
-	width: 163px;
-	height: 100%;
-}
-.tags
-{
-	position: absolute;
-	top: 13px;
-	left: 11px;
-}
-.tags ul li
-{
-    display: inline-block;
-    height: 20px;
-    background: #ff3500;
-    border-radius: 3px;
-    margin-bottom: 5px;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-.tags ul li:not(:last-of-type)
-{
-    margin-right: 10px;
-}
-.tags ul li:hover
-{
-	background: #2e3038;
-}
-.tags ul li a
-{
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    font-size: 12.73px;
-    line-height: 20px;
-    color: #FFFFFF;
-    font-weight: 500;
-    padding-left: 6px;
-    padding-right: 7px;
-}
-.episode_content
-{
-	width: 100%;
-	padding-left: 32px;
-	padding-top: 18px;
-	padding-right: 30px;
-	padding-bottom: 10px;
-}
-.episode_name a
-{
-	font-size: 18px;
-	font-weight: 500;
-	color: #2e3038;
-	line-height: 1.2;
-}
-.episode_date
-{
-	margin-top: 7px;
-}
-.episode_date a
-{
-	font-size: 14px;
-	font-weight: 300;
-	color: #2e3038;
-}
-.episode_name a:hover,
-.episode_date a:hover
-{
-	color: #ff3500;
-}
-.show_info
-{
-	margin-top: 11px;
-}
-.show_fav
-{
-	margin-left: -3px;
-}
-.show_fav_icon
-{
-	width: 26px;
-	height: 26px;
-	cursor: pointer;
-}
-.show_comments
-{
-	margin-left: 17px;
-}
-.show_comments a
-{
-	display: block;
-}
-.show_comments_icon
-{
-	width: 26px;
-	height: 26px;
-	cursor: pointer;
-}
-.show_info_icon img
-{
-	max-height: 100%;
-}
-.show_info_icon svg
-{
-	max-width: 100%;
-	max-height: 100%;
-}
-.svg path, .svg rect, .svg polygon
-{
-    fill: #7b7b7b;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-.show_fav_icon.active .svg path,
-.show_fav_icon:hover .svg path,
-.show_comments:hover .svg path
-{
-	fill: #ff3500;
-}
-.show_fav_count,
-.show_comments_count
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #2e3038;
-	margin-left: 7px;
-	margin-bottom: 2px;
-}
-.show_comments:hover .show_comments_count
-{
-	color: #ff3500;
-}
-.single_player_container
-{
-	margin-top: 6px;
-}
-.single_player
-{
-	width: 100%;
-	height: 40px;
-}
-.jp-audio
-{
-	width: 100%;
-}
-.time_controls
-{
-	width: calc(100% - 112px);
-}
-.time_controls > div:first-child
-{
-	width: 40px;
-}
-.time_controls > div:last-child
-{
-	width: calc(100% - 40px);
-}
-.play_button
-{
-	width: 100%;
-}
-.jp-play
-{
-	position: relative;
-	width: 26px;
-	height: 26px;
-	background: transparent;
-	border: none;
-	outline: none !important;
-	cursor: pointer;
-	margin-top: 5px;
-}
-.jp-play::after
-{
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-align: left;
-	content: url(../images/play-2.png);
-}
-.jp-state-playing .jp-play::after
-{
-	content: url(../images/pause.png);
-}
-.jp-progress
-{
-	width: 100%;
-	height: 13px;
-	background: #e9e9e9;
-	cursor: pointer;
-	border-radius: 7px;
-	overflow: hidden;
-}
-.jp-seek-bar
-{
-	height: 100%;
-}
-.jp-play-bar
-{
-	height: 100%;
-	background: #2e3038;
-}
-.jp-volume-controls
-{
-	width: 97px;
-}
-.jp-volume-controls > div:first-child
-{
-	
-}
-.jp-mute
-{
-	position: relative;
-	width: 26px;
-	height: 26px;
-	background: transparent;
-	border: none;
-	outline: none !important;
-	cursor: pointer;
-}
-.jp-mute::after
-{
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: url(../images/vol.png);
-}
-.jp-state-muted .jp-mute::after
-{
-	content: url(../images/mute.png);
-}
-.jp-volume-bar
-{
-	width: 58px;
-	height: 13px;
-	background: #e9e9e9;
-	border-radius: 7px;
-	overflow: hidden;
-	cursor: pointer;
-}
-.jp-volume-bar-value
-{
-	height: 100%;
-	background: #2e3038;
 }
 
 /*********************************
